@@ -11,11 +11,14 @@ console.log ( Math.floor(Math.random()*6)+1);
 document.getElementById('numero2').innerHTML = "il numero del computer è " + randomNumComp;
 
 if (randomNum > randomNumComp) {
-  document.getElementById('risultato').innerHTML = "hai vinto"
-}
-if (randomNum < randomNumComp) {
-  document.getElementById('risultato').innerHTML = "hai perso"
-}
-if (randomNum == randomNumComp){
-  document.getElementById('risultato').innerHTML = "hai pareggiato"
+
+  document.getElementById('risultato').innerHTML = "hai vinto";
+
+} else if (randomNum < randomNumComp) {
+
+  document.getElementById('risultato').innerHTML = "hai perso";
+
+} else if (randomNum == randomNumComp){
+
+  document.getElementById('risultato').innerHTML = "hai pareggiato";
 }

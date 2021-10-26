@@ -28,16 +28,18 @@ const mailList = [
 let mail = prompt ('qual è la tua mail?');
 console.log(mail);
 
+let isMailFound = false;
+
 //3.
 for (let i=0; i < mailList.length; i++){
   if(mailList[i] === mail){
     console.log('mail trovata')
     document.getElementById("mail").innerHTML = "sei autorizzato a procedere, benvenuto ";
-    mail = true;
+    isMailFound = true;
   }
 }
 
-if (mail === true) {
+if (isMailFound === true) {
   document.getElementById("mail").innerHTML = "sei autorizzato a procedere, benvenuto ";
 }
 else {
