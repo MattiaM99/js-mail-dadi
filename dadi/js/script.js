@@ -13,10 +13,9 @@ document.getElementById('numero2').innerHTML = "il numero del computer è " + ra
 if (randomNum > randomNumComp) {
   document.getElementById('risultato').innerHTML = "hai vinto"
 }
-if (randomNum = randomNumComp){
-  document.getElementById('risultato').innerHTML = "hai pareggiato"
-}
-else{
+if (randomNum < randomNumComp) {
   document.getElementById('risultato').innerHTML = "hai perso"
 }
-
+if (randomNum == randomNumComp){
+  document.getElementById('risultato').innerHTML = "hai pareggiato"
+}
