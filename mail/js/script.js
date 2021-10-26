@@ -32,10 +32,14 @@ console.log(mail);
 for (let i=0; i < mailList.length; i++){
   if(mailList[i] === mail){
     console.log('mail trovata')
-    document.getElementById("mail").innerHTML = "sei autorizzato a procedere, benvenuto " + mail;
+    document.getElementById("mail").innerHTML = "sei autorizzato a procedere, benvenuto ";
+    mail = true;
   }
-  else{
-    console.log('mail non trovata')
-    document.getElementById("mail").innerHTML = "autorizzazione negata, inserire mail corretta";
-  }
+}
+
+if (mail === true) {
+  document.getElementById("mail").innerHTML = "sei autorizzato a procedere, benvenuto ";
+}
+else {
+  document.getElementById("mail").innerHTML = "autorizzazione negata, inserire mail corretta";
 }
